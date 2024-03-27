@@ -1,0 +1,64 @@
+{
+  "name": "frab-clan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "build": "tsc -p tsconfig.prod.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhanJr/frab-clan.git"
+  },
+  "keywords": [
+    "Typescript",
+    "Node"
+  ],
+  "author": "Rizwan Khan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/debug": "^4.1.7",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.7.9",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "debug": "^4.3.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^14.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^7.0.2",
+    "jest": "^27.4.5",
+    "lint-staged": "^11.1.2",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "joi": "^17.5.0",
+    "mongoose": "^6.1.4"
+  },
+  "bugs": {
+    "url": "https://github.com/KhanJr/frab-clan/issues"
+  },
+  "homepage": "https://github.com/KhanJr/frab-clan#readme"
+}
