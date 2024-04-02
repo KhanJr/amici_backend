@@ -1,0 +1,222 @@
+[
+  {
+    "postId": "post001",
+    "comments": [
+      {
+        "commentId": "comment001",
+        "commentUserId": "user123",
+        "postId": "post001",
+        "commentDescription": "Beautiful sunset capture! 🌅",
+        "commentLike": 10
+      },
+      {
+        "commentId": "comment002",
+        "commentUserId": "user456",
+        "postId": "post001",
+        "commentDescription": "Wish I could be there! 😍",
+        "commentLike": 8
+      },
+      {
+        "commentId": "comment003",
+        "commentUserId": "user789",
+        "postId": "post001",
+        "commentDescription": "Absolutely stunning view! 🙌",
+        "commentLike": 12
+      }
+    ]
+  },
+  {
+    "postId": "post002",
+    "comments": [
+      {
+        "commentId": "comment004",
+        "commentUserId": "user123",
+        "postId": "post002",
+        "commentDescription": "Love the cityscape! 🏙️",
+        "commentLike": 15
+      },
+      {
+        "commentId": "comment005",
+        "commentUserId": "user456",
+        "postId": "post002",
+        "commentDescription": "Great shot! 👏",
+        "commentLike": 10
+      },
+      {
+        "commentId": "comment006",
+        "commentUserId": "user789",
+        "postId": "post002",
+        "commentDescription": "Urban exploration goals! 📸",
+        "commentLike": 18
+      }
+    ]
+  },
+  {
+    "postId": "post003",
+    "comments": [
+      {
+        "commentId": "comment007",
+        "commentUserId": "user123",
+        "postId": "post003",
+        "commentDescription": "Yum! What's the recipe? 🍳",
+        "commentLike": 7
+      },
+      {
+        "commentId": "comment008",
+        "commentUserId": "user456",
+        "postId": "post003",
+        "commentDescription": "Looks delicious! 😋",
+        "commentLike": 5
+      },
+      {
+        "commentId": "comment009",
+        "commentUserId": "user789",
+        "postId": "post003",
+        "commentDescription": "I need to up my cooking game! 👩‍🍳",
+        "commentLike": 9
+      }
+    ]
+  },
+  {
+    "postId": "post004",
+    "comments": [
+      {
+        "commentId": "comment001",
+        "commentUserId": "user123",
+        "postId": "post004",
+        "commentDescription": "Beautiful sunset capture! 🌅",
+        "commentLike": 10
+      },
+      {
+        "commentId": "comment002",
+        "commentUserId": "user456",
+        "postId": "post004",
+        "commentDescription": "Wish I could be there! 😍",
+        "commentLike": 8
+      },
+      {
+        "commentId": "comment003",
+        "commentUserId": "user789",
+        "postId": "post004",
+        "commentDescription": "Absolutely stunning view! 🙌",
+        "commentLike": 12
+      }
+    ]
+  },
+  {
+    "postId": "post005",
+    "comments": [
+      {
+        "commentId": "comment004",
+        "commentUserId": "user123",
+        "postId": "post005",
+        "commentDescription": "Love the cityscape! 🏙️",
+        "commentLike": 15
+      },
+      {
+        "commentId": "comment005",
+        "commentUserId": "user456",
+        "postId": "post005",
+        "commentDescription": "Great shot! 👏",
+        "commentLike": 10
+      },
+      {
+        "commentId": "comment006",
+        "commentUserId": "user789",
+        "postId": "post005",
+        "commentDescription": "Urban exploration goals! 📸",
+        "commentLike": 18
+      }
+    ]
+  },
+  {
+    "postId": "post006",
+    "comments": [
+      {
+        "commentId": "comment007",
+        "commentUserId": "user123",
+        "postId": "post006",
+        "commentDescription": "Yum! What's the recipe? 🍳",
+        "commentLike": 7
+      },
+      {
+        "commentId": "comment008",
+        "commentUserId": "user456",
+        "postId": "post006",
+        "commentDescription": "Looks delicious! 😋",
+        "commentLike": 5
+      },
+      {
+        "commentId": "comment009",
+        "commentUserId": "user789",
+        "postId": "post006",
+        "commentDescription": "I need to up my cooking game! 👩‍🍳",
+        "commentLike": 9
+      }
+    ]
+  },
+  {
+    "postId": "post007",
+    "comments": [
+      {
+        "commentId": "comment010",
+        "commentUserId": "user123",
+        "postId": "post007",
+        "commentDescription": "Stunning sunrise! 🌄",
+        "commentLike": 20
+      },
+      {
+        "commentId": "comment011",
+        "commentUserId": "user456",
+        "postId": "post007",
+        "commentDescription": "Nature at its best! 🌿",
+        "commentLike": 15
+      },
+      {
+        "commentId": "comment012",
+        "commentUserId": "user789",
+        "postId": "post007",
+        "commentDescription": "Morning inspiration! ☀️",
+        "commentLike": 12
+      }
+    ]
+  },
+  {
+    "postId": "post008",
+    "comments": [
+      {
+        "commentId": "comment013",
+        "commentUserId": "user123",
+        "postId": "post008",
+        "commentDescription": "Late-night coding sessions are the best! 💻🌙",
+        "commentLike": 10
+      },
+      {
+        "commentId": "comment014",
+        "commentUserId": "user456",
+        "postId": "post008",
+        "commentDescription": "Productivity mode activated! 🔥",
+        "commentLike": 8
+      },
+      {
+        "commentId": "comment015",
+        "commentUserId": "user789",
+        "postId": "post008",
+        "commentDescription": "Code, coffee, repeat! ☕👩‍💻",
+        "commentLike": 12
+      }
+    ]
+  },
+  {
+    "postId": "post009",
+    "comments": [
+      {
+        "commentId": "comment016",
+        "commentUserId": "user123",
+        "postId": "post009",
+        "commentDescription": "Adventures await! 🌟🌎",
+        "commentLike": 10
+      }
+    ]
+  }
+]
