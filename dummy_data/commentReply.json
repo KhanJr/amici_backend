@@ -1,0 +1,74 @@
+[
+  {
+    "commentId": "comment001",
+    "replyComment": [
+      {
+        "replyCommentId": "someReplyId1",
+        "commentId": "comment001",
+        "userId": "user123",
+        "postId": "post456",
+        "replyDescription": "This is a thoughtful reply.",
+        "replyLikeCount": 10
+      },
+      {
+        "replyCommentId": "someReplyId2",
+        "commentId": "comment001",
+        "userId": "user789",
+        "postId": "post456",
+        "replyDescription": "Agreed! Well said.",
+        "replyLikeCount": 5
+      }
+    ]
+  },
+  {
+    "commentId": "comment002",
+    "replyComment": [
+      {
+        "replyCommentId": "someReplyId3",
+        "commentId": "comment002",
+        "userId": "user456",
+        "postId": "post789",
+        "replyDescription": "Thanks for sharing!",
+        "replyLikeCount": 3
+      }
+    ]
+  },
+  {
+    "commentId": "comment003",
+    "replyComment": [
+      {
+        "replyCommentId": "someReplyId4",
+        "commentId": "comment003",
+        "userId": "user101",
+        "postId": "post123",
+        "replyDescription": "I have a different perspective.",
+        "replyLikeCount": 7
+      },
+      {
+        "replyCommentId": "someReplyId5",
+        "commentId": "comment003",
+        "userId": "user202",
+        "postId": "post123",
+        "replyDescription": "Interesting point!",
+        "replyLikeCount": 2
+      }
+    ]
+  },
+  {
+    "commentId": "comment004",
+    "replyComment": [
+      {
+        "replyCommentId": "someReplyId6",
+        "commentId": "comment004",
+        "userId": "user303",
+        "postId": "post987",
+        "replyDescription": "I respectfully disagree.",
+        "replyLikeCount": 1
+      }
+    ]
+  },
+  {
+    "commentId": "comment005",
+    "replyComment": []
+  }
+]

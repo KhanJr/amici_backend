@@ -1,0 +1,320 @@
+[
+  {
+    "userId": "user123",
+    "postId": "post001",
+    "statusDescription": "Enjoying a sunny day at the beach! 🌞🏖️",
+    "saveCount": 10,
+    "likeCount": 50,
+    "hashTag": ["beach", "sunshine", "vacation"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/beach_photo.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user456",
+    "postId": "post002",
+    "statusDescription": "Exploring the city streets. 🏙️🚶‍♂️",
+    "saveCount": 8,
+    "likeCount": 70,
+    "hashTag": ["citylife", "urbanexploration"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/city_street.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user789",
+    "postId": "post003",
+    "statusDescription": "Cooking up a storm in the kitchen! 🍳🔥",
+    "saveCount": 15,
+    "likeCount": 40,
+    "hashTag": ["cooking", "foodie", "cheflife"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/cooking_snap.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user101",
+    "postId": "post004",
+    "statusDescription": "Chasing waterfalls in the wilderness. 🌿🌊",
+    "saveCount": 20,
+    "likeCount": 90,
+    "hashTag": ["nature", "adventure", "waterfall"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/waterfall_hike.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user202",
+    "postId": "post005",
+    "statusDescription": "Late-night coding session. 💻🌙",
+    "saveCount": 5,
+    "likeCount": 60,
+    "hashTag": ["coding", "programming", "nightowl"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/coding_at_night.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user123",
+    "postId": "post006",
+    "statusDescription": "Sunset vibes by the ocean. 🌅🌊",
+    "saveCount": 12,
+    "likeCount": 60,
+    "hashTag": ["sunset", "oceanview", "serenity"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/sunset_beach.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user123",
+    "postId": "post007",
+    "statusDescription": "Coffee break with a view. ☕🏞️",
+    "saveCount": 18,
+    "likeCount": 70,
+    "hashTag": ["coffee", "scenicview", "relaxation"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/coffee_mountain.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user123",
+    "postId": "post008",
+    "statusDescription": "Coding challenges got me like... 😅💻",
+    "saveCount": 8,
+    "likeCount": 40,
+    "hashTag": ["codinglife", "programminghumor"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/coding_meme.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user456",
+    "postId": "post009",
+    "statusDescription": "Weekend getaway in the mountains. 🏔️🌲",
+    "saveCount": 14,
+    "likeCount": 80,
+    "hashTag": ["mountainlife", "hiking", "adventure"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/mountain_peak.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user456",
+    "postId": "post010",
+    "statusDescription": "Artistic reflections in the city. 🌆🎨",
+    "saveCount": 20,
+    "likeCount": 90,
+    "hashTag": ["cityscape", "urbanart", "reflection"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/city_reflections.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user456",
+    "postId": "post011",
+    "statusDescription": "Sunday brunch goals. 🥑🍳",
+    "saveCount": 10,
+    "likeCount": 50,
+    "hashTag": ["brunchtime", "foodphotography"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/avocado_toast.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user789",
+    "postId": "post012",
+    "statusDescription": "Exploring ancient ruins. 🏛️🗺️",
+    "saveCount": 16,
+    "likeCount": 75,
+    "hashTag": ["history", "archaeology", "travel"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/ancient_temple.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user789",
+    "postId": "post013",
+    "statusDescription": "Sunrise yoga by the lake. 🧘‍♀️🌅",
+    "saveCount": 22,
+    "likeCount": 100,
+    "hashTag": ["yogalife", "wellness", "mindfulness"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/yoga_sunrise.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user789",
+    "postId": "post008",
+    "statusDescription": "Frontend magic with CSS animations. ✨🎨",
+    "saveCount": 12,
+    "likeCount": 60,
+    "hashTag": ["webdev", "cssmagic"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/css_animations.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user202",
+    "postId": "post014",
+    "statusDescription": "Weekend hike in the wilderness. 🌲🥾",
+    "saveCount": 15,
+    "likeCount": 70,
+    "hashTag": ["nature", "hikingadventures"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/wilderness_hike1.jpg"
+      },
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/wilderness_hike2.jpg"
+      },
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/wilderness_hike3.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user101",
+    "postId": "post015",
+    "statusDescription": "Sunset vibes by the ocean. 🌅🌊",
+    "saveCount": 12,
+    "likeCount": 60,
+    "hashTag": ["sunset", "oceanview", "serenity"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/sunset_beach.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user101",
+    "postId": "post017",
+    "statusDescription": "Coffee break with a view. ☕🏞️",
+    "saveCount": 18,
+    "likeCount": 70,
+    "hashTag": ["coffee", "scenicview", "relaxation"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/coffee_mountain.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user101",
+    "postId": "post018",
+    "statusDescription": "Coding challenges got me like... 😅💻",
+    "saveCount": 8,
+    "likeCount": 40,
+    "hashTag": ["codinglife", "programminghumor"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/coding_meme.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user202",
+    "postId": "post016",
+    "statusDescription": "Late-night coding session. 💻🌙",
+    "saveCount": 5,
+    "likeCount": 60,
+    "hashTag": ["coding", "programming", "nightowl"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/coding_at_night.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user202",
+    "postId": "post019",
+    "statusDescription": "Exploring new UI designs. 🎨🖌️",
+    "saveCount": 10,
+    "likeCount": 50,
+    "hashTag": ["uxdesign", "creativity"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/ui_sketches.jpg"
+      },
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/ui_sketches.jpg"
+      },
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/ui_sketches.jpg"
+      }
+    ]
+  },
+  {
+    "userId": "user202",
+    "postId": "post020",
+    "statusDescription": "Weekend hike in the wilderness. 🌲🥾",
+    "saveCount": 15,
+    "likeCount": 70,
+    "hashTag": ["nature", "hikingadventures"],
+    "media": [
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/wilderness_hike.jpg"
+      },
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/wilderness_hike.jpg"
+      },
+      {
+        "mediaType": "jpeg",
+        "mediaUrl": "https://example.com/wilderness_hike.jpg"
+      }
+    ]
+  }
+]

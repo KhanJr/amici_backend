@@ -1,0 +1,37 @@
+[
+  {
+    "userId": "user789",
+    "follow": {
+      "followers": ["user101"],
+      "following": ["user101", "user202", "user123", "user456"]
+    }
+  },
+  {
+    "userId": "user101",
+    "follow": {
+      "followers": ["user789"],
+      "following": ["user789", "user202", "user123", "user456"]
+    }
+  },
+  {
+    "userId": "user202",
+    "follow": {
+      "followers": ["user789", "user101"],
+      "following": ["user789", "user101", "user123", "user456"]
+    }
+  },
+  {
+    "userId": "user123",
+    "follow": {
+      "followers": ["user789", "user101", "user202"],
+      "following": ["user789", "user101", "user202", "user456"]
+    }
+  },
+  {
+    "userId": "user456",
+    "follow": {
+      "followers": ["user789", "user101", "user202", "user123"],
+      "following": ["user789", "user101", "user202", "user123"]
+    }
+  }
+]

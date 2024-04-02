@@ -1,0 +1,47 @@
+[
+  {
+    "userId": "user123",
+    "userName": "JohnDoe",
+    "name": "John Doe",
+    "profilePic": "https://example.com/profiles/johndoe.jpg",
+    "description": "Software engineer passionate about AI and web development.",
+    "followersCount": 500,
+    "followingCount": 300
+  },
+  {
+    "userId": "user456",
+    "userName": "JaneSmith",
+    "name": "Jane Smith",
+    "profilePic": "https://example.com/profiles/janesmith.jpg",
+    "description": "Designer, coffee lover, and travel enthusiast.",
+    "followersCount": 1000,
+    "followingCount": 700
+  },
+  {
+    "userId": "user789",
+    "userName": "AlexBrown",
+    "name": "Alex Brown",
+    "profilePic": "https://example.com/profiles/alexbrown.jpg",
+    "description": "Frontend developer exploring new technologies.",
+    "followersCount": 800,
+    "followingCount": 400
+  },
+  {
+    "userId": "user101",
+    "userName": "EmilyGreen",
+    "name": "Emily Green",
+    "profilePic": "https://example.com/profiles/emilygreen.jpg",
+    "description": "Data scientist with a passion for data visualization.",
+    "followersCount": 1200,
+    "followingCount": 900
+  },
+  {
+    "userId": "user202",
+    "userName": "MarkTaylor",
+    "name": "Mark Taylor",
+    "profilePic": "https://example.com/profiles/marktaylor.jpg",
+    "description": "Product manager focused on user experience.",
+    "followersCount": 600,
+    "followingCount": 500
+  }
+]

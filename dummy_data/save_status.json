@@ -1,0 +1,37 @@
+[
+  {
+    "userId": "user123",
+    "post": {
+      "status": ["postId001", "postId002", "postId003"],
+      "saves": ["postId010", "postId011"]
+    }
+  },
+  {
+    "userId": "user456",
+    "post": {
+      "status": ["postId004", "postId005"],
+      "saves": ["postId012", "postId013", "postId014"]
+    }
+  },
+  {
+    "userId": "user789",
+    "post": {
+      "status": ["postId006"],
+      "saves": ["postId015", "postId016", "postId017"]
+    }
+  },
+  {
+    "userId": "user101",
+    "post": {
+      "status": ["postId007", "postId008", "postId009"],
+      "saves": ["postId018"]
+    }
+  },
+  {
+    "userId": "user202",
+    "post": {
+      "status": [],
+      "saves": []
+    }
+  }
+]
