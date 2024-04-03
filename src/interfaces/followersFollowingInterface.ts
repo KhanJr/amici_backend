@@ -15,18 +15,20 @@
  * 
  */
 
-interface IFollowers {
+export interface IFollowers {
   userId: string;
 }
 
-interface IFollowing {
+export interface IFollowing {
   userId: string;
+}
+
+export interface IUserFollow {
+  followers: IFollowers[];
+  following: IFollowing[];
 }
 
 export interface IFollowersFollowings {
   userId: string;
-  follow: {
-    followers: IFollowers[];
-    following: IFollowing[];
-  };
+  follow: IUserFollow;
 }

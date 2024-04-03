@@ -21,14 +21,14 @@
  * 
  */
 
-enum MediaTypes {
-  Audio,
-  Video,
-  Text,
-  Image,
+export enum MediaTypes {
+  AUDIO = 'AUDIO',
+  VIDEO = 'VIDEO',
+  TEXT = 'TEXT',
+  IMAGE = 'IMAGE',
 }
 
-interface IMedia {
+export interface IMedia {
   mediaTypes: MediaTypes;
   mediaUrl: string;
 }

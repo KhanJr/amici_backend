@@ -20,7 +20,7 @@
  * 
  */
 
-interface ISingleComment {
+export interface ISingleComment {
   commentId: string;
   commentUserId: string;
   postId: string;

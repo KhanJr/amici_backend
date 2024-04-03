@@ -23,13 +23,13 @@
  * 
  */
 
-interface ISingleCommentReply {
+export interface ISingleCommentReply {
   replyCommentId: string;
   commentId: string;
   userId: string;
   postId: string;
   replyDescription: string;
-  replyLikeCount: string;
+  replyLikeCount: number;
 }
 
 export interface ICommentReply {
