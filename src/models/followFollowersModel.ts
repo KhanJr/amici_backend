@@ -8,22 +8,43 @@ import {
 } from '@src/interfaces/followersFollowingInterface';
 
 const followersModel: Schema<IFollowers> = new Schema<IFollowers>({
-  userId: { type: String, unique: true, trim: true, required: true },
+  userId: {
+    type: String,
+    unique: true,
+    trim: true,
+    required: [true, 'Follower userId is required'],
+  },
 });
 
 const followingModel: Schema<IFollowing> = new Schema<IFollowing>({
-  userId: { type: String, unique: true, trim: true, required: true },
+  userId: {
+    type: String,
+    unique: true,
+    trim: true,
+    required: [true, 'Following userId is required'],
+  },
 });
 
 const userFollowModel: Schema<IUserFollow> = new Schema<IUserFollow>({
-  followers: { type: [followersModel], required: true },
-  following: { type: [followingModel], required: true },
+  followers: {
+    type: [followersModel],
+    required: [true, 'Followers is required'],
+  },
+  following: {
+    type: [followingModel],
+    required: [true, 'Following is required'],
+  },
 });
 
 const followersFollowingModel: Schema<IFollowersFollowings> =
   new Schema<IFollowersFollowings>({
-    userId: { type: String, unique: true, trim: true, required: true },
-    follow: { type: userFollowModel, required: true },
+    userId: {
+      type: String,
+      unique: true,
+      trim: true,
+      required: [true, 'Follower userId is required'],
+    },
+    follow: { type: userFollowModel, required: [true, 'Follow is required'] },
   });
 
 const USER_FOLLOWER_SCHEMA = object({
@@ -45,4 +66,8 @@ export const FOLLOWERS_FOLLOWING_SCHEMA = object({
 });
 
 export const FollowersFollowingDb: Model<IFollowersFollowings> =
-  model<IFollowersFollowings>('followersFollowing', followersFollowingModel);
+  model<IFollowersFollowings>(
+    'followersFollowing',
+    followersFollowingModel,
+    'followerFollowing'
+  );

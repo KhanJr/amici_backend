@@ -8,21 +8,39 @@ import {
 } from '@src/interfaces/statusSaveInterface';
 
 const userStatusModel: Schema<IUserStatus> = new Schema<IUserStatus>({
-  postId: { type: String, unique: true, trim: true, required: true },
+  postId: {
+    type: String,
+    unique: true,
+    trim: true,
+    required: [true, 'Post id is required'],
+  },
 });
 
 const userSavesModel: Schema<IUserSaves> = new Schema<IUserSaves>({
-  postId: { type: String, unique: true, trim: true, required: true },
+  postId: {
+    type: String,
+    unique: true,
+    trim: true,
+    required: [true, 'Post id is required'],
+  },
 });
 
 const userPostsModel: Schema<IUserPosts> = new Schema<IUserPosts>({
-  status: { type: [userStatusModel], required: true },
-  saves: { type: [userSavesModel], required: true },
+  status: {
+    type: [userStatusModel],
+    required: [true, 'User status is required'],
+  },
+  saves: { type: [userSavesModel], required: [true, 'User saves is required'] },
 });
 
 const statusSavesModel: Schema<IStatusSaves> = new Schema<IStatusSaves>({
-  userId: { type: String, unique: true, trim: true, required: true },
-  post: { type: userPostsModel, required: true },
+  userId: {
+    type: String,
+    unique: true,
+    trim: true,
+    required: [true, 'User id is required'],
+  },
+  post: { type: userPostsModel, required: [true, 'Post id is required'] },
 });
 
 const USER_STATUS_SCHEMA = object({
@@ -44,6 +62,7 @@ export const STATUS_SAVES_SCHEMA = object({
 });
 
 export const StatusSavesDb: Model<IStatusSaves> = model<IStatusSaves>(
-  'statusSaves',
-  statusSavesModel
+  'statusSave',
+  statusSavesModel,
+  'statusSave'
 );
