@@ -15,18 +15,20 @@
  *
  */
 
-interface IStatus {
+export interface IUserStatus {
   postId: string;
 }
 
-interface ISaves {
+export interface IUserSaves {
   postId: string;
+}
+
+export interface IUserPosts {
+  status: IUserStatus[];
+  saves: IUserSaves[];
 }
 
 export interface IStatusSaves {
   userId: string;
-  post: {
-    status: IStatus[];
-    saves: ISaves[];
-  };
+  post: IUserPosts;
 }
