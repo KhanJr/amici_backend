@@ -5,7 +5,7 @@ import {
   IUserStatus,
   IStatusSaves,
   IUserPosts,
-} from '@src/interfaces/statusSaveInterface';
+} from '@src/interfaces/modelInterface/statusSaveInterface';
 
 const userStatusModel: Schema<IUserStatus> = new Schema<IUserStatus>({
   postId: {

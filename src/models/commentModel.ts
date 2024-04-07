@@ -1,6 +1,9 @@
 import { string, number, object, array } from 'joi';
 import { Schema, Model, model } from 'mongoose';
-import { IComment, ISingleComment } from '@src/interfaces/commentInterface';
+import {
+  IComment,
+  ISingleComment,
+} from '@src/interfaces/modelInterface/commentInterface';
 
 const singleCommentModel: Schema = new Schema<ISingleComment>({
   commentId: {
