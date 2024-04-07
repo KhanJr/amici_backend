@@ -1,6 +1,10 @@
 import { string, number, object, array } from 'joi';
 import { Schema, Model, model } from 'mongoose';
-import { IMedia, IStatus, MediaTypes } from '@src/interfaces/statusInterface';
+import {
+  IMedia,
+  IStatus,
+  MediaTypes,
+} from '@src/interfaces/modelInterface/statusInterface';
 
 const mediaModel: Schema = new Schema<IMedia>({
   mediaTypes: {

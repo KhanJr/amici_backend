@@ -5,7 +5,7 @@ import {
   IFollowers,
   IFollowing,
   IFollowersFollowings,
-} from '@src/interfaces/followersFollowingInterface';
+} from '@src/interfaces/modelInterface/followersFollowingInterface';
 
 const followersModel: Schema<IFollowers> = new Schema<IFollowers>({
   userId: {

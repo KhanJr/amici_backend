@@ -3,7 +3,7 @@ import { Schema, Model, model } from 'mongoose';
 import {
   ICommentReply,
   ISingleCommentReply,
-} from '@src/interfaces/commentReplyInterface';
+} from '@src/interfaces/modelInterface/commentReplyInterface';
 
 const singleCommentReplyModel: Schema<ISingleCommentReply> =
   new Schema<ISingleCommentReply>({

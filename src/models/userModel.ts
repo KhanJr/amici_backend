@@ -1,6 +1,6 @@
 import Joi from 'joi';
 import { Schema, Model, model } from 'mongoose';
-import { IUser } from '@src/interfaces/userInterface';
+import { IUser } from '@src/interfaces/modelInterface/userInterface';
 
 /**
  * @class User
