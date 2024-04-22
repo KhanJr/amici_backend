@@ -9,8 +9,8 @@ import {
   READY_EVENT,
 } from '@src/utils/constants/eventConstant';
 import {
+  CONNECTED_TO_DB_MESSAGE,
   MONGODB_APP_DEBUGGER,
-  UNHANDLED_REJECTION_MESSAGE,
 } from '@src/utils/constants/stringConstant';
 
 dotenv.config();
@@ -21,7 +21,7 @@ export const dbConnect = async (uri: string): Promise<void> => {
     serverSelectionTimeoutMS: 5000,
     dbName: process.env.DATABASE_NAME,
   })
-    .then(() => DEBUG(UNHANDLED_REJECTION_MESSAGE))
+    .then(() => DEBUG(CONNECTED_TO_DB_MESSAGE))
     .catch((err: Error) => {
       DEBUG(`${err.name} ${err.message}`);
     });
