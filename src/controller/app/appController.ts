@@ -31,7 +31,7 @@ const PORT = process.env.PORT || 4000;
 // start the server if db connection success
 app.on(READY_EVENT, () => {
   server = app.listen(PORT, () => {
-    DEBUG(`${SERVER_STARTED_MESSAGE}${PORT}`);
+    DEBUG(`${SERVER_STARTED_MESSAGE} ${PORT}`);
   });
 });
 

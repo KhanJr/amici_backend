@@ -13,6 +13,7 @@ import {
 
 export const unhandledGlobalErrorCapture = (): void => {
   const DEBUG = Debug(MONGODB_APP_DEBUGGER);
+
   // Caught unhandled rejection
   process.on(UNHANDLED_REJECTION, (error: Error) => {
     DEBUG(`${UNHANDLED_REJECTION_MESSAGE} ${error.name} ${error.message}`);
