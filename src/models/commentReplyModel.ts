@@ -1,9 +1,14 @@
 import { string, number, object, array } from 'joi';
 import { Schema, Model, model } from 'mongoose';
+import * as dotenv from 'dotenv';
 import {
   ICommentReply,
   ISingleCommentReply,
 } from '@src/interfaces/modelInterface/commentReplyInterface';
+
+dotenv.config();
+const collectionName = process.env.COMMENT_REPLY_COLLECTION_NAME || '';
+
 
 const singleCommentReplyModel: Schema<ISingleCommentReply> =
   new Schema<ISingleCommentReply>({
@@ -77,7 +82,7 @@ export const COMMENT_REPLY_SCHEMA_VALIDATION = object({
 });
 
 export const CommentReplyDb: Model<ICommentReply> = model<ICommentReply>(
-  'commentReply',
+  collectionName,
   commentReplyModel,
-  'commentReply'
+  collectionName
 );

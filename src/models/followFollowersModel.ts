@@ -1,11 +1,15 @@
 import { array, object, string } from 'joi';
 import { Model, Schema, model } from 'mongoose';
+import * as dotenv from 'dotenv';
 import {
   IUserFollow,
   IFollowers,
   IFollowing,
   IFollowersFollowings,
 } from '@src/interfaces/modelInterface/followersFollowingInterface';
+
+dotenv.config();
+const collectionName = process.env.FOLLOWER_FOLLOWING_COLLECTION_NAME || '';
 
 const followersModel: Schema<IFollowers> = new Schema<IFollowers>({
   userId: {
@@ -67,7 +71,7 @@ export const FOLLOWERS_FOLLOWING_SCHEMA = object({
 
 export const FollowersFollowingDb: Model<IFollowersFollowings> =
   model<IFollowersFollowings>(
-    'followersFollowing',
+    collectionName,
     followersFollowingModel,
-    'followerFollowing'
+    collectionName
   );

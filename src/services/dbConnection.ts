@@ -2,20 +2,29 @@ import Debug from 'debug';
 import * as dotenv from 'dotenv';
 import { connect, connection } from 'mongoose';
 import { app } from '@src/controller/app/appController';
+import {
+  ERROR_EVENT,
+  FAILED_EVENT,
+  OPEN_EVENT,
+  READY_EVENT,
+} from '@src/utils/constants/eventConstant';
+import {
+  MONGODB_APP_DEBUGGER,
+  UNHANDLED_REJECTION_MESSAGE,
+} from '@src/utils/constants/stringConstant';
 
 dotenv.config();
-const DEBUG = Debug('app:mongodb');
+const DEBUG = Debug(MONGODB_APP_DEBUGGER);
 
-// TODO: need to add the try and catch
 export const dbConnect = async (uri: string): Promise<void> => {
   connect(uri, {
     serverSelectionTimeoutMS: 5000,
-    dbName: 'amici_status',
+    dbName: process.env.DATABASE_NAME,
   })
-    .then(() => DEBUG('Successfully conncted to database.'))
+    .then(() => DEBUG(UNHANDLED_REJECTION_MESSAGE))
     .catch((err: Error) => {
-      DEBUG(new Error(`Couldn't connect to mongod ${err}`).toString());
+      DEBUG(`${err.name} ${err.message}`);
     });
-  connection.once('error', (err) => app.emit('failed', err));
-  connection.once('open', () => app.emit('ready'));
+  connection.once(ERROR_EVENT, (err) => app.emit(FAILED_EVENT, err));
+  connection.once(OPEN_EVENT, () => app.emit(READY_EVENT));
 };

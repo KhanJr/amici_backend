@@ -1,5 +1,6 @@
 import Joi from 'joi';
 import { Schema, Model, model } from 'mongoose';
+import * as dotenv from 'dotenv';
 import { IUser } from '@src/interfaces/modelInterface/userInterface';
 
 /**
@@ -7,6 +8,8 @@ import { IUser } from '@src/interfaces/modelInterface/userInterface';
  * @author Rizwan Khan
  */
 
+dotenv.config();
+const collectionName = process.env.USER_COLLECTION_NAME || '';
 const userSchema: Schema = new Schema<IUser>({
   userId: {
     type: String,
@@ -57,4 +60,8 @@ export const USER_SCHEMA_VALIDATION = Joi.object({
   followingCount: Joi.number().min(0).required(),
 });
 
-export const UserDb: Model<IUser> = model<IUser>('user', userSchema);
+export const UserDb: Model<IUser> = model<IUser>(
+  collectionName,
+  userSchema,
+  collectionName
+);
