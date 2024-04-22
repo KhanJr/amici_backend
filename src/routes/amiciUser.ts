@@ -1,5 +1,5 @@
-import { getUserById } from '@src/controller/app/user/userController';
 import express from 'express';
+import { findUserById } from '@src/controller/app/user/userController';
 
 // /*
 //   @Status Model
@@ -18,7 +18,7 @@ import express from 'express';
 export const router: express.Router = express.Router();
 
 // Get status
-router.get('/user/:id', getUserById);
+router.get('/user/:id', findUserById);
 
 // // Get a status
 // router.get('/:cname', getStatus);

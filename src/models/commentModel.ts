@@ -1,9 +1,14 @@
 import { string, number, object, array } from 'joi';
+import * as dotenv from 'dotenv';
 import { Schema, Model, model } from 'mongoose';
 import {
   IComment,
   ISingleComment,
 } from '@src/interfaces/modelInterface/commentInterface';
+
+dotenv.config();
+
+const collectionName = process.env.COMMENT_COLLECTION_NAME || '';
 
 const singleCommentModel: Schema = new Schema<ISingleComment>({
   commentId: {
@@ -65,7 +70,7 @@ export const COMMENT_SCHEMA_VALIDATION = object({
 });
 
 export const CommentDb: Model<IComment> = model<IComment>(
-  'comment',
+  collectionName,
   commentModel,
-  'comment'
+  collectionName
 );

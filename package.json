@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "DEBUG=app:mongodb nodemon",
     "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
-    "build": "tsc -p tsconfig.prod.json",
+    "build": "tsc -p tsconfig.json",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
@@ -55,7 +55,6 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "joi": "^17.12.2",
-    "mongodb": "^6.5.0",
     "mongoose": "^8.2.4"
   },
   "bugs": {

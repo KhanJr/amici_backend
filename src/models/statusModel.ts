@@ -1,10 +1,14 @@
 import { string, number, object, array } from 'joi';
 import { Schema, Model, model } from 'mongoose';
+import * as dotenv from 'dotenv';
 import {
   IMedia,
   IStatus,
   MediaTypes,
 } from '@src/interfaces/modelInterface/statusInterface';
+
+dotenv.config();
+const collectionName = process.env.STATUS_COLLECTION_NAME || '';
 
 const mediaModel: Schema = new Schema<IMedia>({
   mediaTypes: {
@@ -71,7 +75,7 @@ export const STATUS_SCHEMA_VALIDATION = object({
 });
 
 export const StatusDb: Model<IStatus> = model<IStatus>(
-  'status',
+  collectionName,
   statusModel,
-  'status'
+  collectionName
 );

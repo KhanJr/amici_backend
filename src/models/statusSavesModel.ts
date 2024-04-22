@@ -1,11 +1,15 @@
 import { array, object, string } from 'joi';
 import { Model, Schema, model } from 'mongoose';
+import * as dotenv from 'dotenv';
 import {
   IUserSaves,
   IUserStatus,
   IStatusSaves,
   IUserPosts,
 } from '@src/interfaces/modelInterface/statusSaveInterface';
+
+dotenv.config();
+const collectionName = process.env.STATUS_SAVE_COLLECTION_NAME || '';
 
 const userStatusModel: Schema<IUserStatus> = new Schema<IUserStatus>({
   postId: {
@@ -62,7 +66,7 @@ export const STATUS_SAVES_SCHEMA = object({
 });
 
 export const StatusSavesDb: Model<IStatusSaves> = model<IStatusSaves>(
-  'statusSave',
+  collectionName,
   statusSavesModel,
-  'statusSave'
+  collectionName
 );
